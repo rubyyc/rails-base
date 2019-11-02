@@ -36,6 +36,7 @@ gem 'font-awesome-rails'
 gem 'will_paginate'
 gem 'carrierwave'
 
+gem 'mini_magick'
 gem 'annotate'
 
 

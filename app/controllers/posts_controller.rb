@@ -64,7 +64,7 @@ class PostsController < ApplicationController
   protected
 
   def post_params
-    params.require(:post).permit(:title, :content, :tag_ids => [])
+    params.require(:post).permit(:title, :content, :image)
   end
 
   def require_is_admin

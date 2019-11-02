@@ -1,5 +1,13 @@
 <tr>
-  <td>#</td>
+  <td>
+    <%= link_to post_path(post) do %>
+      <% if post.image.present? %>
+        <%= image_tag(post.image.thumb.url, class: "thumbnail") %>
+      <% else %>
+        <%= image_tag("http://placehold.it/200x200&text=No Pic", class: "thumbnail") %>
+      <% end %>
+    <% end %>
+  </td>
   <td><%= link_to(post.title, post_path(post)) %></td>
   <td><%= render_post_content(post) %></td>
   <td>

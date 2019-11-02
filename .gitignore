@@ -35,3 +35,4 @@ public/uploads
 /.idea
 .idea/*
 public/uploads
+.idea/workspace.xml
